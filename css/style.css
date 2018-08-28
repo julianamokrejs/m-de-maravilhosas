@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: 'Montserrat, Roboto';
+    font-family: 'Montserrat, Roboto, Roboto Slab';
     margin: 0;
 }
 
@@ -14,6 +14,7 @@ ul {
 .navbar {
     font-family: 'Montserrat';
     display: flex;
+    position: fixed;
     align-items: center;
     width: 100%;
     height: 70px;
@@ -21,8 +22,6 @@ ul {
 }
 
 .navbar__logo-white {
-    display: flex;
-    justify-content: flex-start;
     height: 50px;
     margin-left: 100px;
     margin-right: 180px;
@@ -44,6 +43,8 @@ ul {
     margin-right: 80px;
     margin-left: 80px;
     font-size: 14px;
+    text-transform: uppercase;
+
 }
 
 a {
@@ -52,7 +53,6 @@ a {
     color: white;
     font-weight: lighter;
     margin: 7px;
-    text-transform: uppercase;
     letter-spacing: 1px;
 }
 
@@ -60,16 +60,26 @@ a:hover {
     color: rgba(255, 255, 255, .75);
 }
 
+.a1:hover {
+    color: rgba(255, 255, 255, .75);
+}
+
 .container {
-    text-align: center;
     width: 100%;
     height: auto;
-    padding: 8%;
+    padding-top: 20%;
+    padding-left: 10%;
+    padding-bottom: 5%;
+    /* padding: 13%; */
     background: url(../img/bg-banner-claro.png);
-    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     margin: 0 auto;
+}
+
+.textos-btn {
+    margin-left: 10px;
+    width: 450px;
 }
 
 h1 {
@@ -92,18 +102,19 @@ h2 {
 .btn {
     font-family: 'Montserrat';
     background-color: #C083B9;
+    text-align: center;
     padding-top: 13px;
     width: 250px;
     height: 50px;
-    margin-left: 100px;
     text-transform: uppercase;
     font-weight: 200;
     font-size: 20px;
+    border-radius: 5px;
 }
 
 .container__banner {
     /* margin-top: 30%; */
-    margin-left: 100px;
+    margin-left: 0;
     width: 40%;
 }
 
@@ -125,8 +136,8 @@ h3 {
 }
 
 .container__fotos-mulheres img {
-    width: 200px;
-    margin: 50px 30px 5px 30px;
+    width: 150px;
+    margin: 30px 50px 30px 50px;
     background-color: #63458A;
     border-radius: 5px;
 }
@@ -139,23 +150,25 @@ h3 {
 
 .p1 {
     font-family: 'Montserrat';
-    font-weight: lighter;
+    font-weight: 400;
     color: black;
     margin-top: 5px;
 }
 
 .footer__links {
     display: flex;
+    justify-content: center;
     text-align: center;
     font-size: 12px;
     width: 100%;
-    height: 200px;
+    height: 90px;
     background-color: #323534;
     /* margin: 50px; */
 }
 
 .footer__menu-item {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin: 0 150px;
     width: 30px;
 }
@@ -170,10 +183,193 @@ h3 {
     align-items: center;
     margin: 0 30px;
     height: 50px;
-
 }
 
 .footer__link-facebook img {
     width: 15px;
-    margin: 0 150;
+    margin: 0 120;
+}
+
+.footer__copyright {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 45px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h4 {
+    margin: 0 auto;
+    padding-top: 5px;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+.container__perfil {
+    width: 100%;
+    height: 85vh;
+    padding-top: 360px;
+    /* padding-left: 10%; */
+    padding-bottom: 5%;
+    background: url(../img/Marielle_Franco_em_agosto_de_2016.jpg);
+    background-size: cover;
+    background-position: center 20%;
+    margin: 0 auto;
+}
+
+.container__banner-perfil {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h5 {
+    font-size: 30px;
+    margin-bottom: 0;
+    margin-top: 130px;
+}
+
+.container__historia-marielle {
+    /* display: flex; */
+    justify-content: center;
+    width: 960px;
+    height: auto;
+    font-family: 'Roboto Slab';
+    text-align: center;
+    color: #63458A;
+    margin: 40px auto;
+}
+
+.titulo-banner {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: ExtraBold;
+    color: white;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+
+h3 {
+    text-align: center;
+    font-size: 24px;
+    margin: 7px auto 25px auto;
+}
+
+.foto-resumo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-between; */
+}
+
+.foto-resumo img {
+    width: 200px;
+    height: auto;
+}
+
+.p2 {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: #63458A;
+    text-align: left;
+    width: 40%;
+    margin-left: 30px;
+}
+
+.p3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+    color: #63458A;
+    font-weight: 600;
+    font-size: 20px;
+    width: 66%;
+    margin: 50px auto;
+    border: 1px solid black;
+    padding: 20px 25px;
+}
+
+.sua-historia {
+    width: 66%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+h6 {
+    font-family: 'Roboto Slab';
+    color: #63458A;
+    font-weight: 800;
+    font-size: 24px;
+    margin: 0 auto;
+}
+
+.p4 {
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+.foto-bottom {
+    text-align: center;
+    width: 100%;
+}
+
+.foto-bottom img {
+    width: 100%;
+}
+
+.container__autora {
+    display: flex;
+    /* justify-content: center;
+    align-content: center; */
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #63458A;
+    background-color: #C083B9;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 50px;
+}
+
+.container__autora-perfil {
+    display: flex;
+    align-content: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #63458A;
+    background-color: #C083B9;
+    margin: auto;
+}
+
+.container__autora img {
+    height: 150px;
+}
+
+.a1 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #63458A;
+    margin-left: 0;
+}
+
+.container__autora-btn {    
+    text-align: center;
+    background-color: #C083B9;
+    width: 18%;
+    padding: 10px 5px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.perfil {
+    margin: auto;
+    font-size: 20px;
 }
